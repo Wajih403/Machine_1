@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ali Hassan, HP Inc., LIC=IC93N-Y8BK9-AWK2F-67P5Q-U7XGV-JVR1A
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.41.0.0
+Toolchain Path:  C:\Users\Revive\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Revive\Desktop\EPM-Firmware\EPM_V1\MDK-ARM\EPM_V1.uvprojx
+Project File Date:  02/04/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Users\Revive\AppData\Local\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin'
+Build target 'EPM_V1'
+compiling main.c...
+../Core/Inc/STM_TB6600.h(139): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(209): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOE,GPIO_PIN_3,1);
+../Core/Src/main.c(211): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOE,GPIO_PIN_3,0);
+../Core/Src/main.c(824): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOE,GPIO_PIN_5,1);//heater on
+../Core/Src/main.c(825): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOG,GPIO_PIN_13,1);//led on
+../Core/Src/main.c(874): warning:  #188-D: enumerated type mixed with another type
+  								HAL_GPIO_WritePin(GPIOG,GPIO_PIN_13,0);
+../Core/Src/main.c(875): warning:  #188-D: enumerated type mixed with another type
+  								HAL_GPIO_WritePin(GPIOE,GPIO_PIN_5,0);
+../Core/Src/main.c(880): warning:  #188-D: enumerated type mixed with another type
+  								HAL_GPIO_WritePin(GPIOG,GPIO_PIN_13,1);
+../Core/Src/main.c(881): warning:  #188-D: enumerated type mixed with another type
+  								HAL_GPIO_WritePin(GPIOE,GPIO_PIN_5,1);
+../Core/Src/main.c(945): warning:  #188-D: enumerated type mixed with another type
+  		 HAL_GPIO_WritePin(GPIOE,GPIO_PIN_5,1);
+../Core/Src/main.c(946): warning:  #188-D: enumerated type mixed with another type
+  		 HAL_GPIO_WritePin(GPIOG,GPIO_PIN_13,1);
+../Core/Src/main.c(951): warning:  #188-D: enumerated type mixed with another type
+  		 HAL_GPIO_WritePin(GPIOE,GPIO_PIN_5,0);
+../Core/Src/main.c(952): warning:  #188-D: enumerated type mixed with another type
+  		 HAL_GPIO_WritePin(GPIOG,GPIO_PIN_13,0);
+../Core/Src/main.c(1010): warning:  #550-D: variable "defaultTaskHandle"  was set but never used
+  			osThreadId_t defaultTaskHandle;
+../Core/Src/main.c: 14 warnings, 0 errors
+linking...
+Program Size: Code=35144 RO-data=1148 RW-data=516 ZI-data=28060  
+FromELF: creating hex file...
+"EPM_V1\EPM_V1.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::STM32F4xx_DFP@2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_EPM_V1
+  C:/Users/Revive/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/Revive/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
